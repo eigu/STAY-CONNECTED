@@ -1,0 +1,34 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "PlayerMovement",
+            "id": "1d1906e1-3e62-42c8-879d-75cc0003ee4d",
+            "actions": [
+                {
+                    "name": "W",
+                    "type": "PassThrough",
+                    "id": "b75308e5-f5a4-4e0e-a9d0-aff960384913",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "137cd9ea-cf0d-4f89-89a5-6a43bdbac079",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "W",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
