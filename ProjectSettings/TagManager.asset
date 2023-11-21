@@ -4,12 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - LevelBlock
+  - LevelSpawn
+  - ActiveBlock
+  - PlayerObject
+  - FallDetector
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - whatIsGround
   - Water
   - UI
   - 

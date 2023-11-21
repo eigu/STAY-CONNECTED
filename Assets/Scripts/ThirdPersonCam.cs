@@ -26,12 +26,6 @@ public class ThirdPersonCam : MonoBehaviour
         Topdown
     }
 
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     private void Update()
     {
         // switch styles
@@ -43,7 +37,7 @@ public class ThirdPersonCam : MonoBehaviour
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;
 
-        // roate player object
+        // rotate player object
         if(currentStyle == CameraStyle.Basic || currentStyle == CameraStyle.Topdown)
         {
             float horizontalInput = Input.GetAxis("Horizontal");
@@ -57,8 +51,8 @@ public class ThirdPersonCam : MonoBehaviour
         else if(currentStyle == CameraStyle.Combat)
         {
             Vector3 dirToCombatLookAt = combatLookAt.position - new Vector3(transform.position.x, combatLookAt.position.y, transform.position.z);
-            orientation.forward = dirToCombatLookAt.normalized;
 
+            orientation.forward = dirToCombatLookAt.normalized;
             playerObj.forward = dirToCombatLookAt.normalized;
         }
     }
